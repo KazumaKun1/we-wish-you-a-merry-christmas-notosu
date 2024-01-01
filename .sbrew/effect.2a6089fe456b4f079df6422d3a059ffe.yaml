@@ -1,0 +1,31 @@
+﻿FormatVersion: 7
+Name: "Bridge 1"
+Script: "Bridge"
+Multithreaded: Yes
+Config:
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  006ad1e2cc9e4413a8152edd5586cc56:
+    Name: "receptors"
+    OsbLayer: Overlay
+    DiffSpecific: No
+    Visible: Yes
+  6547601644ba4a23860e092337e9b50d:
+    Name: "flash"
+    OsbLayer: Overlay
+    DiffSpecific: No
+    Visible: Yes
+  eeb32a8225bc40b1affaf1dc87b8ceef:
+    Name: "notes"
+    OsbLayer: Overlay
+    DiffSpecific: No
+    Visible: Yes
+  de8f0e9dafa6459eb626f75e10ae22df:
+    Name: "flash2"
+    OsbLayer: Overlay
+    DiffSpecific: No
+    Visible: Yes

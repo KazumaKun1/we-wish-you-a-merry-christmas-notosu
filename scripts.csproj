@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Output</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FED70CF-82ED-4096-AAC0-09FF8BF1C1A0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>\</AppDesignerFolder>
+    <RootNamespace>storyboard</RootNamespace>
+    <AssemblyName>storyboard</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Output|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>\</OutputPath>
+    <IntermediateOutputPath>..\..\cache\obj</IntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK">
+      <HintPath>..\..\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="StorybrewCommon">
+      <HintPath>..\..\StorybrewCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Background.cs" />
+    <Compile Include="Bridge.cs" />
+    <Compile Include="Chorus.cs" />
+    <Compile Include="ChorusFinal.cs" />
+    <Compile Include="Ending.cs" />
+    <Compile Include="Intro.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/Draw/Drawer.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/Draw/DrawInstance.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/Draw/KeyFrameExtension.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/Draw/Renderers/ByAnchors.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/Draw/Renderers/ByEquation.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/Draw/Renderers/OriginToReceptor.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/Draw/Renderers/PathWay.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/Draw/Renderers/RenderOrigin.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/Draw/Renderers/RenderReceptor.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/Draw/Renderers/Stutter.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/effects/Effect.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/effects/EffectInfo.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/effects/EffectType.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/effects/FadeEffect.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/effects/playfield/PlayFieldEffect.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/PlayField/Playfield.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/PlayField/Column/Column.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/PlayField/Column/NoteOrigin.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/PlayField/Column/Receptor.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/PlayField/Notes/Note.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/PlayField/Notes/SliderParts.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/utility/Anchor.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/utility/CenterType.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/utility/ImageManipulator.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/utility/Operation.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/utility/QuickHash.cs" />
+    <Compile Include="scriptslibrary/notosu-2.2/utility/Utility.cs" />
+  </ItemGroup>
+  <ItemGroup />
+</Project>
