@@ -82,28 +82,6 @@ namespace StorybrewScripts
             field.MoveColumnRelative(OsbEasing.OutCirc, start, start + beatDuration, new Vector2(13, -75), ColumnType.four);
 
             while (start <= 118957) {
-                Vector2 position = field.GetReceptorPositionOf(ColumnType.one, start + beatDuration);
-                Vector2 position2 = field.GetReceptorPositionOf(ColumnType.two, start + beatDuration);
-                Vector2 position3 = field.GetReceptorPositionOf(ColumnType.three, start + beatDuration);
-                Vector2 position4 = field.GetReceptorPositionOf(ColumnType.four, start + beatDuration);
-
-                Vector2 point = Utility.PivotPoint(position, new Vector2(320, 240), Math.PI / 15);
-                Vector2 point2 = Utility.PivotPoint(position2, new Vector2(320, 240), Math.PI / -15);
-                Vector2 point3 = Utility.PivotPoint(position3, new Vector2(320, 240), Math.PI / 15);
-                Vector2 point4 = Utility.PivotPoint(position4, new Vector2(320, 240), Math.PI / -15);
-
-                point.X -= position.X;
-                point.Y -= position.Y;
-
-                point2.X -= position2.X;
-                point2.Y -= position2.Y;
-
-                point3.X -= position3.X;
-                point3.Y -= position3.Y;
-
-                point4.X -= position4.X;
-                point4.Y -= position4.Y;
-
                 field.RotateColumn(OsbEasing.None, start, start + beatDuration, Math.PI / value, ColumnType.one, CenterType.receptor);
                 field.RotateColumn(OsbEasing.None, start, start + beatDuration, Math.PI / value * -1, ColumnType.two, CenterType.receptor); 
                 field.RotateColumn(OsbEasing.None, start, start + beatDuration, Math.PI / value, ColumnType.three, CenterType.receptor); 
